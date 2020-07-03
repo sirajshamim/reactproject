@@ -40,5 +40,5 @@ jobs:
       run: npm install -g surge
       
     # Deploy Surge
-    - name: Deploy React App to Surge
-      run: surge ./build siraj.reactp1.surge.sh --token ${{ secrets.TOKEN_REACTP1 }}
+    - name: Deploy to Surge
+      run: surge ./build siraj.reactp1.surge.sh --token ${{secrets.TOKEN_REACTP1}}
